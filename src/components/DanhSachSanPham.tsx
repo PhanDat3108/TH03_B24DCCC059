@@ -10,14 +10,29 @@ interface DanhSachSanPhamProps {
 const DanhSachSanPham: React.FC<DanhSachSanPhamProps> = ({ tuKhoa }) => {
   const { dsSanPham, thucThi } = useQuanLySanPham();
   const [trangHienTai, setTrangHienTai] = useState(1);
+  const [danhMucChon, setDanhMucChon] = useState("");
+  const [sapXep, setSapXep] = useState(""); 
   const soSanPhamMoiTrang = 8;
 
-  const dsLoc = dsSanPham.filter((sp) =>
-    sp.ten.toLowerCase().includes(tuKhoa.toLowerCase())
-  );
+
+  let dsLoc = dsSanPham.filter((sp) => {
+    const theoTuKhoa = sp.ten.toLowerCase().includes(tuKhoa.toLowerCase());
+    const theoDanhMuc = danhMucChon ? sp.danhMuc === danhMucChon : true;
+    return theoTuKhoa && theoDanhMuc;
+  });
+
+
+  if (sapXep === "gia-tang") {
+    dsLoc = dsLoc.sort((a, b) => a.gia - b.gia);
+  } else if (sapXep === "gia-giam") {
+    dsLoc = dsLoc.sort((a, b) => b.gia - a.gia);
+  } else if (sapXep === "ten-az") {
+    dsLoc = dsLoc.sort((a, b) => a.ten.localeCompare(b.ten));
+  } else if (sapXep === "ten-za") {
+    dsLoc = dsLoc.sort((a, b) => b.ten.localeCompare(a.ten));
+  }
 
   const tongTrang = Math.ceil(dsLoc.length / soSanPhamMoiTrang);
-
   const dsHienTai = dsLoc.slice(
     (trangHienTai - 1) * soSanPhamMoiTrang,
     trangHienTai * soSanPhamMoiTrang
@@ -31,8 +46,41 @@ const DanhSachSanPham: React.FC<DanhSachSanPhamProps> = ({ tuKhoa }) => {
 
   return (
     <div className="page-danhsach">
-      
+    
+      <div className="loc-sanpham">
+        <label>Danh mục:</label>
+        <select
+          value={danhMucChon}
+          onChange={(e) => {
+            setDanhMucChon(e.target.value);
+            setTrangHienTai(1);
+          }}
+        >
+          <option value="">Tất cả</option>
+          <option value="Điện tử">Điện tử</option>
+          <option value="Quần áo">Quần áo</option>
+          <option value="Đồ ăn">Đồ ăn</option>
+          <option value="Sách">Sách</option>
+          <option value="Khác">Khác</option>
+        </select>
 
+        <label>Sắp xếp:</label>
+        <select
+          value={sapXep}
+          onChange={(e) => {
+            setSapXep(e.target.value);
+            setTrangHienTai(1);
+          }}
+        >
+          <option value="">Mặc định</option>
+          <option value="gia-tang">Giá: Thấp → Cao</option>
+          <option value="gia-giam">Giá: Cao → Thấp</option>
+          <option value="ten-az">Tên: A → Z</option>
+          <option value="ten-za">Tên: Z → A</option>
+        </select>
+      </div>
+
+      {}
       {dsHienTai.length === 0 ? (
         <p>Không có sản phẩm nào.</p>
       ) : (
@@ -68,6 +116,7 @@ const DanhSachSanPham: React.FC<DanhSachSanPhamProps> = ({ tuKhoa }) => {
             ))}
           </div>
 
+          {}
           <div className="phan-trang">
             <button
               disabled={trangHienTai === 1}

@@ -80,7 +80,7 @@ export const danhSachSanPham: SanPham[] = [
     gia: 180000, 
     soLuong: 10, 
     moTa: "Dành cho người mới bắt đầu", 
-    anh: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80" 
+    anh: "https://topdev.vn/blog/wp-content/uploads/2023/12/sach-hay-javascript-1.jpg" 
   },
   { 
     id: 10, 
@@ -89,6 +89,52 @@ export const danhSachSanPham: SanPham[] = [
     gia: 450000, 
     soLuong: 40, 
     moTa: "Công suất mạnh, bảo vệ tóc", 
-    anh: "https://meta.vn/Data/image/2023/02/02/panasonic-eh-nd37-1.jpg" 
+    anh: "https://bizweb.dktcdn.net/100/141/195/products/352779798-803353781087450-711917245608140917-n.jpg?v=1748494918363" 
+  },
+  {
+    "id": 11,
+    "ten": "Bàn ủi hơi nước Philips",
+    "danhMuc": "Điện tử",
+    "gia": 890000,
+    "soLuong": 25,
+    "moTa": "Ủi phẳng nhanh, chống dính tốt",
+    "anh": "https://bizweb.dktcdn.net/100/128/766/files/ban-ui-hoi-nuoc-bear-ir-4h15h-1.jpg?v=1739606149066"
+  },
+  {
+    "id": 12,
+    "ten": "Máy xay sinh tố Sunhouse",
+    "danhMuc": "Điện tử",
+    "gia": 650000,
+    "soLuong": 35,
+    "moTa": "Đa năng 3 cối, lưỡi thép không gỉ",
+    "anh": "https://cdn.tgdd.vn/2021/11/CookDish/9-thu-khong-nen-cho-vao-may-xay-sinh-to-cac-ba-noi-avt-1200x676.jpg"
+  },
+  {
+    "id": 13,
+    "ten": "Quạt điều hòa Kangaroo",
+    "danhMuc": "Điện tử",
+    "gia": 2150000,
+    "soLuong": 18,
+    "moTa": "Làm mát nhanh, tiết kiệm điện",
+    "anh": "https://maxbuy.com.vn/Uploads/de_784B769386D3F7510D642A97916C4727.jpg"
+  },
+  {
+    "id": 14,
+    "ten": "Nồi chiên không dầu Lock&Lock",
+    "danhMuc": "Điện tử",
+    "gia": 1790000,
+    "soLuong": 22,
+    "moTa": "Dung tích 5.2L, điều khiển cảm ứng",
+    "anh": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2024_3_7_638454494775266538_cach-su-dung-noi-com-dien-lock-lock-bia.jpg"
+  },
+  {
+    "id": 15,
+    "ten": "Máy lọc không khí Xiaomi",
+    "danhMuc": "Điện tử",
+    "gia": 3290000,
+    "soLuong": 15,
+    "moTa": "Lọc bụi mịn PM2.5, kết nối app",
+    "anh": "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/2023_2_9_638115522235809278_cach-chon-may-loc-khong-khi-theo-dien-tich-phong-thumb.jpg"
   }
-];
+]
+;
