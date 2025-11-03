@@ -6,6 +6,7 @@ import ThemSanPham from "./pages/ThemSanPham";
 import ChinhSuaSanPham from "./pages/ChinhSuaSanPham";
 import ChiTietSanPham from "./pages/ChiTietSanPham";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   const [tuKhoa, setTuKhoa] = useState("");
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <Route path="/edit/:id" element={<ChinhSuaSanPham />} />
           <Route path="/products/:id" element={<ChiTietSanPham />} />
         </Routes>
+        <Footer/>
       </Router>
     </QuanLySanPhamProvider>
   );
