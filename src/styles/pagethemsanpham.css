@@ -1,0 +1,73 @@
+.form-them-san-pham {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-them-san-pham h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-them-san-pham .loi {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-them-san-pham form > div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-them-san-pham label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-them-san-pham input,
+.form-them-san-pham select,
+.form-them-san-pham textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-them-san-pham input:focus,
+.form-them-san-pham select:focus,
+.form-them-san-pham textarea:focus {
+  border-color: #3498db;
+}
+
+.form-them-san-pham textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-them-san-pham button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-them-san-pham button:hover {
+  background-color: #2980b9;
+}

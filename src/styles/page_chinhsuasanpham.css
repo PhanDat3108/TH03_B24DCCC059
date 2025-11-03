@@ -1,0 +1,48 @@
+.form-chinhsua {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-chinhsua h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-chinhsua input,
+.form-chinhsua textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.nut {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nut button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+}
+
+.nut button:first-child {
+  background-color: #4caf50;
+}
+
+.nut button:last-child {
+  background-color: #f44336;
+}

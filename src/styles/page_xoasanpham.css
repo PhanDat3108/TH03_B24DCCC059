@@ -1,0 +1,47 @@
+.page-xoa {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px auto;
+}
+
+.page-xoa h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.page-xoa ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-xoa li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.page-xoa li span {
+  font-weight: 500;
+}
+
+.page-xoa button {
+  background-color: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.page-xoa button:hover {
+  background-color: #c62828;
+}

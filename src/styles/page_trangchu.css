@@ -1,0 +1,112 @@
+body {
+  background: #f7f7f7;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #27a5d7;
+  color: white;
+  height: 80px; 
+  padding: 0 20px;
+}
+
+
+
+
+.timkiem input {
+  width: 300px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* GIAN HÀNG */
+.gianhang {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.the-sanpham {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.the-sanpham:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.the-sanpham img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.noi-dung {
+  padding: 12px;
+}
+
+.noi-dung h4 {
+  margin: 6px 0;
+  font-size: 18px;
+}
+
+.noi-dung p {
+  font-size: 14px;
+  color: #666;
+  margin: 6px 0 10px;
+}
+
+.gia {
+  display: block;
+  font-weight: 600;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.nut {
+  display: flex;
+  gap: 8px;
+}
+
+.nut a {
+  flex: 1;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.nut .xem { background: #2196f3; }
+.nut .sua { background: #ff9800; }
+
+.trong {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}
+.logo img {
+  width: 170px;  
+  height: auto;
+}
+
+

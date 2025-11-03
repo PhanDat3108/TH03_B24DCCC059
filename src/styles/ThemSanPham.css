@@ -1,0 +1,35 @@
+.form-them {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.form-them h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.form-them input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-them button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-them button:hover {
+  background-color: #0056b3;
+}
